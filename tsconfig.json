@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                                  // Specify ECMAScript target version
+    "module": "commonjs",                                // Node.js uses CommonJS modules
+    "lib": ["ES2020"],                                   // Library files for ECMAScript features
+    "allowJs": true,                                     // Allow JavaScript files
+    "checkJs": false,                                    // Disallow type checking for JavaScript files
+    "jsx": "preserve",                                   // JSX support if you ever use React
+    "sourceMap": true,                                   // Create .map files for debugging
+    "outDir": "./dist",                                  // Redirect output structure to /dist
+    "rootDir": "./src",                                  // Specify the root directory of input files
+
+    /* Strict Type-Checking Options */
+    "strict": true,                                      // Enable all strict type-checking options
+    "noImplicitAny": true,                               // Raise errors on expressions and declarations with an `any` type
+    "strictNullChecks": true,                            // Ensure null and undefined are handled
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",                          // Use Node.js module resolution strategy
+    "esModuleInterop": true,                             // Enables ES6 imports for CommonJS modules
+    "forceConsistentCasingInFileNames": true,            // Ensure file names are consistent
+    "resolveJsonModule": true,                           // Allow importing JSON files
+    "skipLibCheck": true,                                // Skip checking types in node_modules
+
+    /* Additional Options */
+    "typeRoots": ["./node_modules/@types"],              // Specify type definition files
+    "paths": {
+      "@src/*": ["src/*"],                               // Example alias if needed
+      "@config/*": ["src/config/*"]
+    }
+  },
+  "include": ["src/**/*"],                               // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist"]                    // Exclude unnecessary files
+}
+
