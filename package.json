@@ -1,0 +1,12 @@
+{
+  "name": "osianjl-mybackend-1",
+  "version": "1.0.0",
+  "description": "Great backend template that combines SQL and nonSQL databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
