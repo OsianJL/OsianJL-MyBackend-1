@@ -9,7 +9,9 @@
     "test": "jest",
     "detect-clones": "jscpd --min-tokens 50 --reporters console,html --output reports/clones src",
     "inspect": "jsinspect src/",
-    "prepare": "husky install"
+    "prepare": "husky install",
+     "start": "node dist/index.js",
+  "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
