@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16.4-alpine  # Imagen de PostgreSQL
+    container_name: osian_backend_postgres_1  # Nombre del contenedor
+    environment:
+      POSTGRES_DB: osian_backend_1           # Nombre de la base de datos
+      POSTGRES_USER: osian                # Usuario de PostgreSQL
+      POSTGRES_PASSWORD: osidev    # Contraseña de PostgreSQL
+    ports:
+      - "54322:5432"                        # Mapea el puerto 54322 al 5432 del contenedor
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persistencia de los datos
+
+volumes:
+  postgres_data:
+    driver: local

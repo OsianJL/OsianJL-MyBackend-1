@@ -24,7 +24,8 @@
     "skipLibCheck": true,                                // Skip checking types in node_modules
 
     /* Additional Options */
-    "typeRoots": ["./node_modules/@types"],              // Specify type definition files
+    "typeRoots": ["./node_modules/@types"],  
+    "baseUrl": ".",            // Specify type definition files
     "paths": {
       "@src/*": ["src/*"],                               // Example alias if needed
       "@config/*": ["src/config/*"]
